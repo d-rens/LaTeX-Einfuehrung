@@ -3,6 +3,7 @@
 \usepackage{fontspec}
 \usepackage[ngerman]{babel}
 \usepackage{csquotes}
+\usepackage{fancyvrb}
 
 % import the bib.bib bibliogrpahy
 \usepackage{biblatex}
@@ -43,18 +44,19 @@
 \section{\LaTeX?}
 \begin{frame}{Was ist \LaTeX?}
     \begin{itemize}
-        \item Erfinder
-        \item warum er es erfand
+        \item Knuth hat \TeX gemacht
+        \item Lamport hat dann \LaTeX daraus gemacht
     \end{itemize}
 
     \begin{columns}
-        \column{0.7\textwidth}
+        \column{0.5\textwidth}
         
-        \column{0.3\textwidth}
+        \hfill
+        \column{0.4\textwidth}
         \begin{figure}[htpb]
             \centering
-            \includegraphics[width=1\textwidth]{./l}
-            \caption{}
+            \includegraphics[width=0.7\textwidth]{./figs/tex-knuth.jpg}
+            \includegraphics[width=0.7\textwidth]{./figs/latex-lamport.jpg}
         \end{figure}
     \end{columns}
 
@@ -69,8 +71,20 @@
         \item Bibliografie
         \item macht spa\ss
     \end{itemize}
-
 \end{frame}
+
+
+
+\begin{frame}{Warum nicht Word?}
+    \begin{itemize}
+        \item Word macht es schwerer \"Anderungen an gro\ss{}en Dokumenten vorzunehmen.
+        \item Bibliografien werden automatisch gemacht, auch Zitierstil nachtr\"aglich \"anderbar.
+        \item Seitenzahlen, Referenzen, etc. werden automatisch erzeugt.
+        \item \textit{kann man nicht in Vim benutzen.}
+    \end{itemize}
+    
+\end{frame}
+
 
 
 
@@ -80,6 +94,7 @@
         \item Ausarbeitungen/Laborberichte
         \item Pr\"asentationen
         \item Dokumente
+        \item Lebenslauf
         \item B\"ucher
     \end{itemize}
 \end{frame}
@@ -161,7 +176,25 @@ Beispiele:
 
 
 
+\section{Anderes}
+\begin{frame}{Wie man es benutzt}
+    \begin{itemize}
+        \item Arch-basiert: \Verb|pacman -S texlive-basic|
+        \item Debian-basiert: \Verb|apt-get install texlive-full|
+        \item MacOS: \Verb|MiKTeX|
+        \item Windows: \Verb|MacTeX|
+    \end{itemize}
+\end{frame}
 
+
+
+\begin{frame}{Wie Ich es benutze}
+    \begin{figure}[htpb]
+        \centering
+        \includegraphics[width=\textwidth]{./figs/workflow.png}
+        \label{fig:workflow-png}
+    \end{figure}
+\end{frame}
 
 
 
