@@ -1,0 +1,45 @@
+\documentclass{beamer}
+
+\usepackage{fontspec}
+\usepackage[ngerman]{babel}
+
+\usetheme{Berlin}
+\usecolortheme{beaver}
+
+\usefonttheme{professionalfonts} % using non standard fonts for beamer
+\usefonttheme{serif} % default family is serif
+\setmainfont{Liberation Serif}
+
+
+\title{Einf\"uhrung in \LaTeX}
+\author{Daniel Renschler}
+\date{17. Juli 2023}
+
+
+\begin{document}
+
+
+\begin{frame}
+    \titlepage 
+\end{frame}
+
+
+\begin{frame}
+    \tableofcontents
+\end{frame}
+
+
+\begin{frame}{Text and Image in beamer}
+    \frametitle{test frametitle}
+    \section{test section}
+    \begin{columns}
+        \column{0.4\textwidth}
+        This is an example of text and image in the same slide using columns environment.
+        \hfill
+        \column{0.4\textwidth}
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    \end{columns}
+\end{frame}
+
+
+\end{document}
