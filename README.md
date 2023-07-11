@@ -1,2 +1,2 @@
 # LaTeX-Einfuehrung
-Files for an introduction for LaTeX
+Files for an introduction to LaTeX
