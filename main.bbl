@@ -1,0 +1,127 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{baranek2023randomized}{misc}{}
+      \name{author}{5}{}{%
+        {{hash=81a3effed9bf9746fdb7a268e9928b4c}{%
+           family={Baranek},
+           familyi={B\bibinitperiod},
+           given={Marcin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=43b6ab304283316389cc6523e9025d48}{%
+           family={Kałuża},
+           familyi={K\bibinitperiod},
+           given={Andrzej},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5b96d843df474105506cece68eb8deb1}{%
+           family={Morkisz},
+           familyi={M\bibinitperiod},
+           given={Paweł\bibnamedelima M.},
+           giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=dced573bbc642035214e008c6f86cb22}{%
+           family={Przybyłowicz},
+           familyi={P\bibinitperiod},
+           given={Paweł},
+           giveni={P\bibinitperiod}}}%
+        {{hash=a503c307ba6feb31ce29b3b67fcfb2b1}{%
+           family={Sobieraj},
+           familyi={S\bibinitperiod},
+           given={Michał},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{bf1889addeb65473490175ba1cc256a0}
+      \strng{fullhash}{a0df341a9fad97c85b8ac0ce6047afce}
+      \strng{bibnamehash}{bf1889addeb65473490175ba1cc256a0}
+      \strng{authorbibnamehash}{bf1889addeb65473490175ba1cc256a0}
+      \strng{authornamehash}{bf1889addeb65473490175ba1cc256a0}
+      \strng{authorfullhash}{a0df341a9fad97c85b8ac0ce6047afce}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{math.NA}
+      \field{eprinttype}{arXiv}
+      \field{title}{On the randomized Euler algorithm under inexact information}
+      \field{year}{2023}
+      \verb{eprint}
+      \verb 2307.04718
+      \endverb
+    \endentry
+    \entry{chen2023sequential}{misc}{}
+      \name{author}{7}{}{%
+        {{hash=40324c5235c456ad5ecea8effce19bd0}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Xie},
+           giveni={X\bibinitperiod}}}%
+        {{hash=fa3a8f6f778ccdeafa45e813fac2f680}{%
+           family={Dua},
+           familyi={D\bibinitperiod},
+           given={Arpit},
+           giveni={A\bibinitperiod}}}%
+        {{hash=8d6b9eb05d0a41626e73d9f87028df50}{%
+           family={Hermele},
+           familyi={H\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a3a9d4bf407da9d9970e23b4e3205ef8}{%
+           family={Stephen},
+           familyi={S\bibinitperiod},
+           given={David\bibnamedelima T.},
+           giveni={D\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=034ec89d3e7fe0ae1cfb20e5a945eb20}{%
+           family={Tantivasadakarn},
+           familyi={T\bibinitperiod},
+           given={Nathanan},
+           giveni={N\bibinitperiod}}}%
+        {{hash=8351076c230f697964f1ec2df8b6baa4}{%
+           family={Vanhove},
+           familyi={V\bibinitperiod},
+           given={Robijn},
+           giveni={R\bibinitperiod}}}%
+        {{hash=17ed9e8ff6e6e29cb0407e923846c766}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Jing-Yu},
+           giveni={J\bibinithyphendelim Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{b2206f4042f9a68a018f30202d90a55e}
+      \strng{fullhash}{1fecf311d191864e086fbcfac6dcd91d}
+      \strng{bibnamehash}{b2206f4042f9a68a018f30202d90a55e}
+      \strng{authorbibnamehash}{b2206f4042f9a68a018f30202d90a55e}
+      \strng{authornamehash}{b2206f4042f9a68a018f30202d90a55e}
+      \strng{authorfullhash}{1fecf311d191864e086fbcfac6dcd91d}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cond-mat.str-el}
+      \field{eprinttype}{arXiv}
+      \field{title}{Sequential Quantum Circuits as Maps between Gapped Phases}
+      \field{year}{2023}
+      \verb{eprint}
+      \verb 2307.01267
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
