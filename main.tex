@@ -2,10 +2,11 @@
 
 \usepackage{fontspec}
 \usepackage[ngerman]{babel}
-\usepackage{csquotes}
+\usepackage{verbatim}
 \usepackage{fancyvrb}
+\usepackage{listings}
+\usepackage{csquotes}
 
-% import the bib.bib bibliogrpahy
 \usepackage{biblatex}
 \addbibresource{bib.bib}
 
@@ -17,6 +18,14 @@
 \setmainfont{Liberation Serif}
 
 
+\lstset{
+    basicstyle=\ttfamily,
+    language=[LaTeX]TeX,
+    % Other customizations...
+}
+
+
+
 \title{Einf\"uhrung in \LaTeX}
 \author{Daniel Renschler}
 \date{17. Juli 2023}
@@ -25,14 +34,9 @@
 \begin{document}
 
 
-
-
-
 \begin{frame}
     \titlepage 
 \end{frame}
-
-
 
 
 \begin{frame}
@@ -40,9 +44,10 @@
 \end{frame}
 
 
-
 \section{\LaTeX?}
 \begin{frame}{Was ist \LaTeX?}
+
+
     \begin{itemize}
         \item Knuth hat \TeX gemacht
         \item Lamport hat dann \LaTeX daraus gemacht
@@ -66,20 +71,21 @@
 
 \begin{frame}{Warum \LaTeX?}
     \begin{itemize}
-        \item Einfacher
-        \item Logisch
-        \item Bibliografie
-        \item macht spa\ss
+        \item Ist sehr intuitiv.
+        \item Unendlich extensiv mit packages.
+        \item K\"ummert sich um viel von alleine
+        \item Man muss sich nicht mit Typografie und Vergleichbarem vertraut machen\footnote{Es funktioniert einfach und sieht gut aus.}.
+        \item Macht spa\ss
     \end{itemize}
 \end{frame}
 
 
 
-\begin{frame}{Warum nicht Word?}
+\begin{frame}{Warum nicht Word? (oder andere WYSIWYG\footnote{WYSIWYG = What you see is what you get} software)}
     \begin{itemize}
         \item Word macht es schwerer \"Anderungen an gro\ss{}en Dokumenten vorzunehmen.
-        \item Bibliografien werden automatisch gemacht, auch Zitierstil nachtr\"aglich \"anderbar.
-        \item Seitenzahlen, Referenzen, etc. werden automatisch erzeugt.
+        \item Bibliografien werden nicht automatisch gemacht, auch Zitierstil nachtr\"aglich \"anderbar.
+        \item Seitenzahlen, Referenzen, etc. werden nicht automatisch erzeugt.
         \item \textit{kann man nicht in Vim benutzen.}
     \end{itemize}
     
@@ -125,8 +131,7 @@
 \end{frame}
 
 
-
-\section{Grundlegender Syntax}
+\section{Beispiele}
 \begin{frame}{Beispiel 1}
 
 
@@ -173,11 +178,76 @@ Beispiele:
 
 
 
+\section{Syntax \& etc.}
+\begin{frame}{Syntax}
+
+\begin{itemize}
+    \item Commands beginnen mit \textbackslash{}, nicht zu verwechseln mit \Verb|/|
+    \item 
+\end{itemize} 
+
+\end{frame}
+
+
+
+\begin{frame}[fragile]
+    \frametitle{Struktur}
+%Struktur die in jedem Dokument eingehalten werden muss:
+    
+\begin{lstlisting}
+\documentclass{article}
+
+
+\begin{document}
+    
+\end{document}
+\end{lstlisting}
+
+\end{frame}
+
+
+\begin{frame}{documentclasses}
+   Gibt viele, die wichtigsten sind: 
+   \begin{itemize}
+        \item \Verb|article|: ``normale Klasse'' Titel ist auf erster Seite
+        \item \Verb|report|:  Titel hat eigene Seitenzahlen
+        \item \Verb|beamer|: F\"ur Pr\"asentationen (diese z.B.)
+        \item Andere sind: \Verb|book|, \Verb|letter|, etc.
+   \end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{Sections}
+Es gibt verschiedene an Sections.
+
+\begin{itemize}
+    \item section
+    \item subsection
+    \item subsubsection
+\end{itemize}
+
+Diese werden dann z.B. in Inhaltsverzeichnissen angezeigt und sich untergeordnet.
+
+\begin{itemize}
+    \item Section
+        \begin{itemize}
+            \item subsection
+                \begin{itemize}
+                    \item subsubsection
+                \end{itemize}
+        \end{itemize}
+\end{itemize}
+    
+\end{frame}
 
 
 
 \section{Anderes}
 \begin{frame}{Wie man es benutzt}
+
+
+
     \begin{itemize}
         \item Arch-basiert: \Verb|pacman -S texlive-basic|
         \item Debian-basiert: \Verb|apt-get install texlive-full|
@@ -197,6 +267,14 @@ Beispiele:
 \end{frame}
 
 
+\begin{frame}{Weitere Resourcen}
+    \begin{itemize}
+        \item \LaTeX\ Tutorials, von Luke Smith
+        \item Overleaf Tutorials
+        \item ``The \TeX book", von Donald E. Knuth
+    \end{itemize}
+    
+\end{frame}
 
 
 
@@ -206,19 +284,6 @@ Beispiele:
 \end{frame}
 
 
-
-
-%\begin{frame}{Text and Image in beamer}
-%    \frametitle{test frametitle}
-%    \section{test section}
-%    \begin{columns}
-%        \column{0.4\textwidth}
-%        This is an example of text and image in the same slide using columns environment.
-%        \hfill
-%        \column{0.4\textwidth}
-%        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-%    \end{columns}
-%\end{frame}
 
 
 
