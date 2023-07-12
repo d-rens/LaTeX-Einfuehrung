@@ -125,6 +125,7 @@
 
 
 
+\section{Beispiele}
 \begin{frame}{Berichte}
     \begin{itemize}
         \item Laborberichte 
@@ -148,7 +149,6 @@
 \end{frame}
 
 
-\section{Beispiele}
 \begin{frame}{Beispiel 1}
 
 
@@ -169,8 +169,7 @@ Beispiele:
 
 
 
-\begin{frame}
-    Toeplitz Matrix
+\begin{frame}{Toeplitz Matrix}
     \[ A=\begin{bmatrix}
             a_0 & a_{-1} & a_{-2} & \ldots & \ldots  &a_{-n+1}  \\
             a_1 & a_0  & a_{-1} &  \ddots   &  &  \vdots \\
@@ -316,6 +315,34 @@ Diese werden dann z.B. in Inhaltsverzeichnissen angezeigt und sich untergeordnet
                 \end{itemize}
         \end{itemize}
 \end{itemize}
+\end{frame}
+
+
+
+
+\begin{frame}[fragile]{Fu\ss{}noten und Bibliografien}
+
+Eine Fu\ss{}note macht man:
+\begin{lstlisting}
+\footnote{Fußnoteninhalt}
+\end{lstlisting}
+
+Eine Zitat macht man:
+\begin{lstlisting}
+\cite{Zitat}
+\end{lstlisting}
+
+Eine Bibliografie macht man:
+\begin{lstlisting}
+\printbibliography
+\end{lstlisting}
+
+\vfill
+
+Fu\ss{}note\footnote{Fußnoteninhalt}
+
+Zitat \cite{smith2017}
+
     
 \end{frame}
 
@@ -335,7 +362,6 @@ Diese werden dann z.B. in Inhaltsverzeichnissen angezeigt und sich untergeordnet
 \end{frame}
 
 
-
 \begin{frame}{Wie Ich es benutze}
     \begin{figure}[htpb]
         \centering
@@ -347,6 +373,7 @@ Diese werden dann z.B. in Inhaltsverzeichnissen angezeigt und sich untergeordnet
 
 \begin{frame}{Weitere Resourcen}
     \begin{itemize}
+        \item diese Pr\"asentation: \url{https://github.com/d-rens/LaTeX-Einfuehrung/}
         \item \LaTeX\ Tutorials, von Luke Smith
         \item Overleaf Tutorials
         \item ``The \TeX book", von Donald E. Knuth
