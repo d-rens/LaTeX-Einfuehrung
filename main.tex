@@ -6,7 +6,6 @@
 \usepackage{fancyvrb}
 \usepackage{listings}
 \usepackage{csquotes}
-\usepackage{pst-electricfield}
 
 \usepackage{tikz}
 % Vector Styles
@@ -62,26 +61,33 @@
 
 
 \section{\LaTeX?}
-\begin{frame}{Was ist \LaTeX?}
+\begin{frame}{Geschichte}
+    \begin{columns}
+        \column{0.5\textwidth}
 
 
     \begin{itemize}
-        \item Knuth hat \TeX gemacht
-        \item Lamport hat dann \LaTeX daraus gemacht
-    \end{itemize}
+        \item Donald Knuth hat 1977-1986 \TeX gemacht, da er die typografische Qualit\"at seiner B\"ucher nicht gut fand. (The Art of Computer Programming)
 
-    \begin{columns}
-        \column{0.5\textwidth}
+    \end{itemize}
         
         \hfill
-        \column{0.4\textwidth}
+        \column{0.5\textwidth}
         \begin{figure}[htpb]
             \centering
             \includegraphics[width=0.7\textwidth]{./figs/tex-knuth.jpg}
-            \includegraphics[width=0.7\textwidth]{./figs/latex-lamport.jpg}
         \end{figure}
     \end{columns}
+\end{frame}
 
+\begin{frame}{Was ist \LaTeX?}
+    \begin{itemize}
+        \item Textsatzystem.
+        \item Erm\"oglicht Erstellen von Dokumenten.
+        \item Beliebt im Akademischen Bereich/Wissenschaft.
+        \item Erstellt hochwertige PDF Ausgabe.
+    \end{itemize}
+    
 \end{frame}
 
 
@@ -343,7 +349,52 @@ Fu\ss{}note\footnote{Fußnoteninhalt}
 
 Zitat \cite{smith2017}
 
-    
+\end{frame}
+
+
+
+\begin{frame}{Math environments}
+    Mathe wird in math-environments geschrieben.
+    \begin{itemize}
+        \item inline math, z.B. $f(x)=x^2$: \lstinline{$ ... $}
+        \item display-math, z.b. \[
+            \frac{1}{|G|}\sum_g X^g_i \]
+         mit: \textbackslash [ ... \textbackslash ] 
+
+         \item Gleichungen, mit einem align environment.
+    \end{itemize}
+
+
+\end{frame}
+
+
+\begin{frame}{Mathe 1}
+    \begin{itemize}
+        \item superscript: \lstinline{^}, bzw. \lstinline{^\{\}} 
+            \begin{itemize}
+                \item $e^x$: \lstinline{e^x}
+            \end{itemize}
+        \item subscript: \lstinline{_}, bzw. \lstinline{_\{\}} 
+            \begin{itemize}
+                \item $e_x$: \lstinline{e_x}
+            \end{itemize}
+        \item Br\"uche: \textbackslash\lstinline{frac\{\}\{\}}
+            \begin{itemize}
+                \item $\frac{a}{b}$, $ \frac{1}{\frac{2}{\frac{3}{4}}}$ \[
+                    \frac{1}{\frac{1}{\frac{1}{\frac{1}{2}2}2}2} .\] 
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Mathe 2}
+
+\begin{itemize}
+    \item Integral: \textbackslash\lstinline{int_0^\{}\textbackslash\lstinline{pi\}}\[ \int_{0}^{\pi} \] 
+    \item Summe: \textbackslash\lstinline{sum_0^1}\[ \sum_{0}^{1},\ \prod^1_0 \]
+\end{itemize}
+
+
+
 \end{frame}
 
 
@@ -356,19 +407,12 @@ Zitat \cite{smith2017}
     \begin{itemize}
         \item Arch-basiert: \Verb|pacman -S texlive-basic|
         \item Debian-basiert: \Verb|apt-get install texlive-full|
-        \item MacOS: \Verb|MiKTeX|
-        \item Windows: \Verb|MacTeX|
+        \item MacOS: \Verb|MacTeX|
+        \item Windows: \Verb|MiKTeX|
     \end{itemize}
 \end{frame}
 
 
-\begin{frame}{Wie Ich es benutze}
-    \begin{figure}[htpb]
-        \centering
-        \includegraphics[width=\textwidth]{./figs/workflow.png}
-        \label{fig:workflow-png}
-    \end{figure}
-\end{frame}
 
 
 \begin{frame}{Weitere Resourcen}
